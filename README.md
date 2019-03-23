@@ -2,7 +2,7 @@
 demo - https://www.lvh.io/posts/dont-expose-the-docker-socket-not-even-to-a-container.html
 
 ## Run PoC
-`docker run --name docker-sock-breakout-implant --rm -v /var/run/docker.sock:/var/run/docker.sock enkaskal/docker-sock-breakout-implant`
+`docker run --name poc --rm -v /var/run/docker.sock:/var/run/docker.sock enkaskal/docker-implant-sock-breakout:latest`
 
 ## Clean-up PoC
 
